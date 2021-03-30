@@ -1,7 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LamdaExercise implements CheckPerson{
+public class LamdaExercise{
+
+    public interface CheckPerson {
+        boolean test(Person p);
+    }
 
     List<Person> personRoster;
 
@@ -25,11 +29,25 @@ public class LamdaExercise implements CheckPerson{
         }
     }
 
-    @Override
-    public boolean test(Person p) {
-        if(p.getAge() > 21 && p.getGender()== Person.Sex.MALE){
-            return true;
+
+    public static class LocalClass implements CheckPerson{
+        @Override
+        public boolean test(Person p) {
+            if(p.getAge()>21 && p.getGender()== Person.Sex.MALE){
+                return true;
+            }
+            return false;
         }
-        return false;
     }
+
+    public CheckPerson anonymousClass = new CheckPerson() {
+        @Override
+        public boolean test(Person p) {
+            if(p.getGender() == Person.Sex.FEMALE){
+                return true;
+            }
+            return false;
+        }
+    };
+
 }

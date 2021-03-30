@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1be4fb07-13b5-4bdb-a345-ae984b9d9494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CheckPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LamdaExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LamdaExerciseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lambdas2-ZCW/CheckPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lambdas2-ZCW/LamdaExercise.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lambdas2-ZCW/LamdaExercise.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Lambdas2-ZCW/LamdaExerciseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lambdas2-ZCW/LamdaExerciseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CheckPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LamdaExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LamdaExercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LamdaExerciseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LamdaExerciseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,6 +55,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -111,7 +114,7 @@
       <updated>1617050395528</updated>
       <workItem from="1617050397820" duration="3000" />
       <workItem from="1617050452691" duration="571000" />
-      <workItem from="1617068865132" duration="1808000" />
+      <workItem from="1617068865132" duration="3085000" />
     </task>
     <servers />
   </component>

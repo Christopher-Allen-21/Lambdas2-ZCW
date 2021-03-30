@@ -14,47 +14,84 @@ public class LamdaExerciseTest {
     Person person1 = new Person("Chris",birthdate, Person.Sex.MALE,"callen21@gmail.com",25);
     Person person2 = new Person("Stephen",birthdate2, Person.Sex.MALE,"sallen21@gmail.com",22);
     Person person3 = new Person("Elizabeth",birthdate2, Person.Sex.FEMALE,"eallen21@gmail.com",22);
+    LamdaExercise.LocalClass localClass = new LamdaExercise.LocalClass();
 
 
     @Test
-    public void test1(){
+    public void localClassTest1(){
         List<Person> personList = new ArrayList<>();
         personList.add(person1);
         personList.add(person2);
         personList.add(person3);
-        LamdaExercise lamdaExercise = new LamdaExercise(personList);
 
         boolean expected = true;
-        boolean actual = lamdaExercise.test(person1);
+        boolean actual = localClass.test(person1);
 
         Assert.assertEquals(expected,actual);
     }
 
     @Test
-    public void test2(){
+    public void localClassTest2(){
         List<Person> personList = new ArrayList<>();
         personList.add(person1);
         personList.add(person2);
         personList.add(person3);
-        LamdaExercise lamdaExercise = new LamdaExercise(personList);
 
         boolean expected = true;
-        boolean actual = lamdaExercise.test(person2);
+        boolean actual = localClass.test(person2);
 
         Assert.assertEquals(expected,actual);
     }
 
     @Test
-    public void test3(){
+    public void localClassTest3(){
         List<Person> personList = new ArrayList<>();
         personList.add(person1);
         personList.add(person2);
         personList.add(person3);
-        LamdaExercise lamdaExercise = new LamdaExercise(personList);
 
         boolean expected = false;
-        boolean actual = lamdaExercise.test(person3);
+        boolean actual = localClass.test(person3);
 
         Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void anonymousClassTest1(){
+        List<Person> personList = new ArrayList<>();
+        personList.add(person1);
+        personList.add(person2);
+        personList.add(person3);
+
+        boolean expected = false;
+       // boolean actual = localClass.test(person1);
+
+        //Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void anonymousClassTest2(){
+        List<Person> personList = new ArrayList<>();
+        personList.add(person1);
+        personList.add(person2);
+        personList.add(person3);
+
+        boolean expected = false;
+       // boolean actual = localClass.test(person2);
+
+       // Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void anonymousClassTest3(){
+        List<Person> personList = new ArrayList<>();
+        personList.add(person1);
+        personList.add(person2);
+        personList.add(person3);
+
+        boolean expected = true;
+      //  boolean actual = localClass.test(person3);
+
+      //  Assert.assertEquals(expected,actual);
     }
 }
