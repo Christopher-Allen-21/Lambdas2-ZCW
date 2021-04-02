@@ -40,14 +40,28 @@ public class LamdaExercise{
         }
     }
 
-    public CheckPerson anonymousClass = new CheckPerson() {
+    private CheckPerson anonymous = new CheckPerson() {
         @Override
         public boolean test(Person p) {
-            if(p.getGender() == Person.Sex.FEMALE){
+            if (p.getAge() > 21 && p.getGender() == Person.Sex.MALE) {
                 return true;
             }
             return false;
         }
     };
+
+
+    private CheckPerson lamda = person -> person.getAge() > 21 && person.getGender() == Person.Sex.MALE;
+
+    public CheckPerson getAnonymous(){
+        return anonymous;
+    }
+
+    public CheckPerson getLamda(){
+        return lamda;
+    }
+
+
+
 
 }

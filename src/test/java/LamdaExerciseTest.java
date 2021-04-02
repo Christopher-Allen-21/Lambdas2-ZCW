@@ -15,6 +15,8 @@ public class LamdaExerciseTest {
     Person person2 = new Person("Stephen",birthdate2, Person.Sex.MALE,"sallen21@gmail.com",22);
     Person person3 = new Person("Elizabeth",birthdate2, Person.Sex.FEMALE,"eallen21@gmail.com",22);
     LamdaExercise.LocalClass localClass = new LamdaExercise.LocalClass();
+    LamdaExercise lamdaExercise = new LamdaExercise();
+
 
 
     @Test
@@ -63,10 +65,10 @@ public class LamdaExerciseTest {
         personList.add(person2);
         personList.add(person3);
 
-        boolean expected = false;
-       // boolean actual = localClass.test(person1);
+        boolean expected = true;
+        boolean actual = lamdaExercise.getAnonymous().test(person1);
 
-        //Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expected,actual);
     }
 
     @Test
@@ -76,10 +78,10 @@ public class LamdaExerciseTest {
         personList.add(person2);
         personList.add(person3);
 
-        boolean expected = false;
-       // boolean actual = localClass.test(person2);
+        boolean expected = true;
+        boolean actual = lamdaExercise.getAnonymous().test(person2);
 
-       // Assert.assertEquals(expected,actual);
+       Assert.assertEquals(expected,actual);
     }
 
     @Test
@@ -89,9 +91,48 @@ public class LamdaExerciseTest {
         personList.add(person2);
         personList.add(person3);
 
-        boolean expected = true;
-      //  boolean actual = localClass.test(person3);
+        boolean expected = false;
+        boolean actual = lamdaExercise.getAnonymous().test(person3);
 
-      //  Assert.assertEquals(expected,actual);
+      Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void lamdaTest1(){
+        List<Person> personList = new ArrayList<>();
+        personList.add(person1);
+        personList.add(person2);
+        personList.add(person3);
+
+        boolean expected = true;
+        boolean actual = lamdaExercise.getLamda().test(person1);
+
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void lamdaTest2(){
+        List<Person> personList = new ArrayList<>();
+        personList.add(person1);
+        personList.add(person2);
+        personList.add(person3);
+
+        boolean expected = true;
+        boolean actual = lamdaExercise.getLamda().test(person2);
+
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void lamdaTest3(){
+        List<Person> personList = new ArrayList<>();
+        personList.add(person1);
+        personList.add(person2);
+        personList.add(person3);
+
+        boolean expected = false;
+        boolean actual = lamdaExercise.getLamda().test(person3);
+
+        Assert.assertEquals(expected,actual);
     }
 }

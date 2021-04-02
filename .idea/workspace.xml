@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1be4fb07-13b5-4bdb-a345-ae984b9d9494" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lambdas2-ZCW/CheckPerson.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lambdas2-ZCW/LamdaExercise.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lambdas2-ZCW/LamdaExercise.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Lambdas2-ZCW/LamdaExerciseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lambdas2-ZCW/LamdaExerciseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CheckPerson.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LamdaExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LamdaExercise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LamdaExerciseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LamdaExerciseTest.java" afterDir="false" />
     </list>
@@ -18,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -66,15 +64,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.LamdaExerciseTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,7 +110,8 @@
       <updated>1617050395528</updated>
       <workItem from="1617050397820" duration="3000" />
       <workItem from="1617050452691" duration="571000" />
-      <workItem from="1617068865132" duration="3085000" />
+      <workItem from="1617068865132" duration="3562000" />
+      <workItem from="1617304665227" duration="1599000" />
     </task>
     <servers />
   </component>
@@ -131,5 +128,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
